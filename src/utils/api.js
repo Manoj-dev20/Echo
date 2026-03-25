@@ -3,7 +3,7 @@
 //  Workflow is LIVE at: https://maya143.app.n8n.cloud/webhook
 // ─────────────────────────────────────────────────────────────────
 
-const BASE_URL = 'https://maya143.app.n8n.cloud/webhook/upload-memory';
+const BASE_URL = 'https://maya143.app.n8n.cloud/webhook';
 const USER_ID  = 'user_echo_001';
 
 // Shared fetch helper
