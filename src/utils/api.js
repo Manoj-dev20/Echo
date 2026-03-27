@@ -1,4 +1,4 @@
-const BASE_URL = 'https://maya143.app.n8n.cloud/webhook-test';
+const BASE_URL = 'https://maya143.app.n8n.cloud/webhook-test/chat';
 
 const api = async (endpoint, options = {}) => {
   const res = await fetch(`${BASE_URL}${endpoint}`, {
