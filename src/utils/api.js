@@ -25,13 +25,13 @@ export const sendChat = (message, type, userId, sessionId) =>
   });
 
 export const initAgent = (agentName, userId) =>
-  api('/agent/init', {
+  api('/agent-init', {
     method: 'POST',
     body: JSON.stringify({ agentName, userId }),
   });
 
 export const sendAgentChat = (agentName, message, userId, sessionId) =>
-  api('/agent/chat', {
+  api('/agent-chat', {
     method: 'POST',
     body: JSON.stringify({ agentName, message, userId, sessionId }),
   });
@@ -40,7 +40,7 @@ export const loadAlerts = (userId, domain = null) =>
   api(`/alerts?userId=${userId}${domain ? `&domain=${domain}` : ''}`);
 
 export const updateAlert = (alertId, status, userId) =>
-  api('/alerts/update', {
+  api('/alerts-update', {
     method: 'POST',
     body: JSON.stringify({ alertId, status, userId }),
   });
